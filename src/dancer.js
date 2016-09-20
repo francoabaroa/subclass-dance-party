@@ -13,8 +13,8 @@ makeDancer.prototype.step = function() {
 };
 
 makeDancer.prototype.setPosition = function(top, left) {
-  this.top = top;
-  this.left = left;
+  // this.top = top;
+  // this.left = left;
 
   var styleSettings = {
     top: top,
