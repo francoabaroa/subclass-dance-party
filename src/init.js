@@ -29,8 +29,17 @@ $(document).ready(function() {
 
     // make a dancer with a random position
 
+    console.log(dancerMakerFunctionName);
+    var top;
+    if (dancerMakerFunctionName !== 'makeBlinkyDancer') {
+      top = 800 - Math.random() * 150;
+    } else {
+      top = $('body').height() * Math.random();
+    }
+
+
     var dancer = new dancerMakerFunction(
-      $('body').height() * Math.random(),
+      top,
       $('body').width() * Math.random(),
       Math.random() * 1000
     );
@@ -48,7 +57,14 @@ $(document).ready(function() {
 
   window.lineUp = function() {
     dancers.forEach(function (val) {
-      val.$node.css('left', 100);
+      console.log(val);
+      if (val instanceof makeBlinkyDancer) {
+        val.$node.css('top', '20%');
+      } else if (val instanceof dogDancer) {
+        val.$node.css('left', '10%');
+      } else if (val instanceof animatedDancer) {
+        val.$node.css('left', '80%');
+      }
     });
   };
 
