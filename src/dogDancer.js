@@ -6,7 +6,7 @@ dogDancer.prototype = Object.create(makeDancer.prototype);
 
 dogDancer.prototype.constructor = dogDancer;
 
-dogDancer.prototype.slideUp = function() {
+dogDancer.prototype.step = function() {
   makeDancer.prototype.step.call(this);
-  this.$node.slideUp();
+  this.$node.toggle('fast');
 };
