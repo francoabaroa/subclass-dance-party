@@ -4,8 +4,10 @@ body, html{
 body{
   margin: 0px;
   /*background-color:#444;*/
-  background-image: url("http://3.bp.blogspot.com/-bRUp2NtIoYw/UXVtB2I42DI/AAAAAAAACEI/tc9yqG-nsKs/s1600/Cartoon%2BBackground%2BWallpaper-719574.jpg");
-  background-size: 100%;
+  background-image: url("images/nature.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
   font-size: 18px;
 }
 body, a:link, a:visited, a:active{
@@ -15,6 +17,11 @@ body, a:link, a:visited, a:active{
   padding:5px 12px;
   float:center;
 }
+
+.lineUpButton{
+  left:250px;
+}
+
 .topbar{
   height:32px;
   background-color: #555;
@@ -22,8 +29,19 @@ body, a:link, a:visited, a:active{
 .title{
   background-color: #777;
 }
-.dancer{
-  border:20px solid blue;
+
+.test{
+  border:20px solid red;
   border-radius:100%;
+}
+
+.dancer{
+  /*border:5px solid blue;
+  border-radius:100%;*/
+  background-image: url("images/dog.png");
+  background-size: 98%;
+  width:106px; 
+  height:106px;
+  display: block;
   position:absolute;
 }
