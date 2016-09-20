@@ -3,7 +3,9 @@ body, html{
 }
 body{
   margin: 0px;
-  background-color:#444;
+  /*background-color:#444;*/
+  background-image: url("http://3.bp.blogspot.com/-bRUp2NtIoYw/UXVtB2I42DI/AAAAAAAACEI/tc9yqG-nsKs/s1600/Cartoon%2BBackground%2BWallpaper-719574.jpg");
+  background-size: 100%;
   font-size: 18px;
 }
 body, a:link, a:visited, a:active{
@@ -11,7 +13,7 @@ body, a:link, a:visited, a:active{
 }
 .title, .addDancerButton{
   padding:5px 12px;
-  float:right;
+  float:center;
 }
 .topbar{
   height:32px;
