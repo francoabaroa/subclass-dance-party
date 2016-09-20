@@ -8,5 +8,5 @@ dogDancer.prototype.constructor = dogDancer;
 
 dogDancer.prototype.step = function() {
   makeDancer.prototype.step.call(this);
-  this.$node.toggle('fast');
+  // this.$node.toggle('fast');
 };

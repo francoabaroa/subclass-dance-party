@@ -16,13 +16,14 @@ $(document).ready(function() {
      * to the stage.
      */
 
+
     var dancerMakerFunctionName = $(this).data('dancer-maker-function-name');
-    console.log(dancerMakerFunctionName);
+    // console.log(dancerMakerFunctionName);
     
 
     // get the maker function for the kind of dancer we're supposed to make
     var dancerMakerFunction = window[dancerMakerFunctionName];
-    console.log(dancerMakerFunction);
+    // console.log(dancerMakerFunction);
 
     
 
@@ -33,15 +34,15 @@ $(document).ready(function() {
       $('body').width() * Math.random(),
       Math.random() * 1000
     );
+
     $('body').append(dancer.$node);
 
     dancers.push(dancer);
+    console.log(dancers);
     
   });
 
   $('.lineUpButton').on('click', function(event) {
-    var dancerMakerFunctionName = $(this).data('dancer-maker-function-name');
-    var dancerMakerFunction = window[dancerMakerFunctionName];
     window.lineUp();
   });
 
@@ -51,9 +52,21 @@ $(document).ready(function() {
     });
   };
 
-  $('body').delegate('.dancer', 'mouseover', function() {
-    $('.dancer').remove();
-  });
+  // $('body').delegate('.cat', 'mouseover', function() {
+  //   $('.cat').addClass('rotate90');
+  // });
+
+  // $('body').delegate('.lameDog', 'mouseover', function() {
+  //   $('.lameDog').remove();
+  // });
+
+  // $('body').delegate('.butterfly', 'mouseover', function() {
+  //   $('.butterfly').css({
+  //     'background-size': 300,
+  //     'height': 500,
+  //     'width': 500
+  //   });
+  // });
   
 
 });

@@ -12,7 +12,7 @@ animatedDancer.prototype.step = function() {
     opacity: '0.8',
     height: '150px',
     width: '150px'
-  }).toggle();
+  });
 };
 
 
