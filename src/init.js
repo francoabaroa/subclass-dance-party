@@ -17,11 +17,13 @@ $(document).ready(function() {
      */
 
     var dancerMakerFunctionName = $(this).data('dancer-maker-function-name');
-    // console.log(dancerMakerFunctionName);
+    console.log(dancerMakerFunctionName);
     
 
     // get the maker function for the kind of dancer we're supposed to make
     var dancerMakerFunction = window[dancerMakerFunctionName];
+    console.log(dancerMakerFunction);
+
     
 
     // make a dancer with a random position
@@ -32,6 +34,26 @@ $(document).ready(function() {
       Math.random() * 1000
     );
     $('body').append(dancer.$node);
+
+    dancers.push(dancer);
+    
   });
+
+  $('.lineUpButton').on('click', function(event) {
+    var dancerMakerFunctionName = $(this).data('dancer-maker-function-name');
+    var dancerMakerFunction = window[dancerMakerFunctionName];
+    window.lineUp();
+  });
+
+  window.lineUp = function() {
+    dancers.forEach(function (val) {
+      val.$node.css('left', 100);
+    });
+  };
+
+  $('<span class="dancer"></span>').mouseover(function() {
+    $('<span class="dancer"></span>').hide();
+  });
+
 });
 
