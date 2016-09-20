@@ -51,9 +51,10 @@ $(document).ready(function() {
     });
   };
 
-  $('<span class="dancer"></span>').mouseover(function() {
-    $('<span class="dancer"></span>').hide();
+  $('body').delegate('.dancer', 'mouseover', function() {
+    $('.dancer').remove();
   });
+  
 
 });
 
