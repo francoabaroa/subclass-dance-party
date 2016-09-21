@@ -31,7 +31,7 @@ $(document).ready(function() {
     var top;
 
     if (dancerMakerFunctionName !== 'ButterflyDancer') {
-      top = 800 - Math.random() * 150;
+      top = 800 - Math.random() * 650;
     } else {
       top = $('body').height() * Math.random();
     }
@@ -62,21 +62,17 @@ $(document).ready(function() {
     });
   };
 
-  // $('body').delegate('.cat', 'mouseover', function() {
-  //   $('.cat').addClass('rotate90');
-  // });
+  $('body').delegate('.cat', 'mouseover', function() {
+    $('.cat').toggle(2000);
+  });
 
-  // $('body').delegate('.lameDog', 'mouseover', function() {
-  //   $('.lameDog').remove();
-  // });
+  $('body').delegate('.lameDog', 'mouseover', function() {
+    $('.lameDog').remove();
+  });
 
-  // $('body').delegate('.butterfly', 'mouseover', function() {
-  //   $('.butterfly').css({
-  //     'background-size': 300,
-  //     'height': 500,
-  //     'width': 500
-  //   });
-  // });
+  $('body').delegate('.butterfly', 'mouseover', function() {
+    $('.butterfly').fadeOut(2500);
+  });
   
 
 });

@@ -13,13 +13,21 @@ body{
 body, a:link, a:visited, a:active{
   color: #f6f7f9;
 }
-.title, .addDancerButton{
+.title{
   padding:5px 12px;
   float:center;
+  z-index:999;
+}
+
+.addDancerButton{
+  padding:5px 12px;
+  float:center;
+  z-index:999;
 }
 
 .lineUpButton{
   left:250px;
+  z-index:999;
 }
 
 .audio{
@@ -60,6 +68,7 @@ body, a:link, a:visited, a:active{
   display: block;
   position:absolute;
   background-image: url("images/butterfly.gif");
+  z-index:0;
 }
 
 .cat{
