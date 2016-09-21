@@ -28,15 +28,13 @@ $(document).ready(function() {
     
 
     // make a dancer with a random position
-
-    console.log(dancerMakerFunctionName);
     var top;
-    if (dancerMakerFunctionName !== 'makeBlinkyDancer') {
+
+    if (dancerMakerFunctionName !== 'ButterflyDancer') {
       top = 800 - Math.random() * 150;
     } else {
       top = $('body').height() * Math.random();
     }
-
 
     var dancer = new dancerMakerFunction(
       top,
@@ -45,10 +43,7 @@ $(document).ready(function() {
     );
 
     $('body').append(dancer.$node);
-
     dancers.push(dancer);
-    console.log(dancers);
-    
   });
 
   $('.lineUpButton').on('click', function(event) {
@@ -57,12 +52,11 @@ $(document).ready(function() {
 
   window.lineUp = function() {
     dancers.forEach(function (val) {
-      console.log(val);
-      if (val instanceof makeBlinkyDancer) {
+      if (val instanceof ButterflyDancer) {
         val.$node.css('top', '20%');
-      } else if (val instanceof dogDancer) {
+      } else if (val instanceof DogDancer) {
         val.$node.css('left', '10%');
-      } else if (val instanceof animatedDancer) {
+      } else if (val instanceof CatDancer) {
         val.$node.css('left', '80%');
       }
     });
