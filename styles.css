@@ -7,6 +7,7 @@ body{
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
+  background-attachment: fixed;
   font-size: 18px;
 }
 body, a:link, a:visited, a:active{
@@ -21,14 +22,19 @@ body, a:link, a:visited, a:active{
   left:250px;
 }
 
+.audio{
+  display:none;
+}
+
 .topbar{
   height:32px;
-  background-color: #42a703;
   text-align: center;
+  font-family: 'Baloo Tamma', cursive;
 }
 .title{
   font-size: 50px;
   text-align: center;
+  font-family: 'Baloo Tamma', cursive;
 }
 
 .dancer{
@@ -41,10 +47,10 @@ body, a:link, a:visited, a:active{
 .lameDog{
   background-size: 98%;
   width:106px; 
-  height:106px;
+  height:270px;
   display: block;
   position:absolute;
-  background-image: url("images/lamedog.gif");
+  background-image: url("images/dog.gif");
 }
 
 .butterfly{
@@ -59,7 +65,7 @@ body, a:link, a:visited, a:active{
 .cat{
   background-size: 95%;
   width:180px; 
-  height:350px;
+  height:220px;
   display: block;
   position:absolute;
   background-image: url("images/cat.gif");

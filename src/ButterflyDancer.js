@@ -8,6 +8,7 @@ ButterflyDancer.prototype.constructor = ButterflyDancer;
 
 ButterflyDancer.prototype.step = function() {
   Animal.prototype.step.call(this);
+  this.$node.show();
 };
 
 

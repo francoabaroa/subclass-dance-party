@@ -1,21 +1,21 @@
-describe('dogDancer', function() {
+describe('DogDancer', function() {
 
   var dogDancer, clock;
   var timeBetweenSteps = 100;
 
   beforeEach(function() {
     clock = sinon.useFakeTimers();
-    dogDancer = new dogDancer(10, 20, timeBetweenSteps);
+    dogDancer = new DogDancer(10, 20, timeBetweenSteps);
   });
 
   it('should have a jQuery $node object', function() {
     expect(dogDancer.$node).to.be.an.instanceof(jQuery);
   });
 
-  it('should have a step function that makes its node blink', function() {
-    sinon.spy(dogDancer.$node, 'toggle');
+  it('should have a step function that makes its node show', function() {
+    sinon.spy(dogDancer.$node, 'show');
     dogDancer.step();
-    expect(dogDancer.$node.toggle.called).to.be.true;
+    expect(dogDancer.$node.show.called).to.be.true;
   });
 
   describe('dance', function() {

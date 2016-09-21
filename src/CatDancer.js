@@ -8,6 +8,7 @@ CatDancer.prototype.constructor = CatDancer;
 
 CatDancer.prototype.step = function() {
   Animal.prototype.step.call(this);
+  this.$node.show();
 };
 
 

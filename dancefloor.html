@@ -3,6 +3,7 @@
   <head>
     <title>Animal Dance Party</title>
     <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Tamma" rel="stylesheet">
     <script src="lib/jquery.js"></script>
     <script src="src/Animal.js"></script>
     <script src="src/ButterflyDancer.js"></script>
@@ -10,13 +11,16 @@
     <script src="src/DogDancer.js"></script>
   </head>
   <body>
+    <div class="title">Animal Dance Party</div>
     <div class="topbar">
       <a href="#" class="addDancerButton" data-dancer-maker-function-name="ButterflyDancer">Butterfly Dancer</a>
       <a href="#" class="addDancerButton" data-dancer-maker-function-name="CatDancer">Cat Dancer</a>
       <a href="#" class="addDancerButton" data-dancer-maker-function-name="DogDancer">Dog Dancer</a>
       <a href="#" class="lineUpButton" data-dancer-maker-function-name="lineUp">Line Up</a>     
     </div>
-    <div class="title">Animal Dance Party</div>
+    <audio controls class="audio">
+    <source src="http://dl.dropboxusercontent.com/u/6213850/FoxSay.mp3" type="audio/mpeg">
+    </audio>
     <script src="src/init.js"></script>
   </body>
 </html>
