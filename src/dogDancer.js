@@ -1,12 +1,11 @@
-var dogDancer = function(top, left, timeBetweenSteps) {
-  makeDancer.apply(this, arguments);
+var DogDancer = function(top, left, timeBetweenSteps) {
+  Animal.apply(this, arguments);
 };
 
-dogDancer.prototype = Object.create(makeDancer.prototype);
+DogDancer.prototype = Object.create(Animal.prototype);
 
-dogDancer.prototype.constructor = dogDancer;
+DogDancer.prototype.constructor = DogDancer;
 
-dogDancer.prototype.step = function() {
-  makeDancer.prototype.step.call(this);
-  // this.$node.toggle('fast');
+DogDancer.prototype.step = function() {
+  Animal.prototype.step.call(this);
 };
