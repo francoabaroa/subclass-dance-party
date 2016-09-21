@@ -3,7 +3,7 @@ var Animal = function(top, left, timeBetweenSteps) {
   this.left = left;
   this.timeBetweenSteps = timeBetweenSteps;
 
-  
+  // depeneding on type of dancer, assigns appropriate class name
   if (this instanceof ButterflyDancer) {
     this.$node = $('<span class="butterfly"></span>');
   } else if (this instanceof DogDancer) {

@@ -30,6 +30,11 @@ body, a:link, a:visited, a:active{
   z-index:999;
 }
 
+.catsDogsButton{
+  z-index:999;
+  padding-left:19px;
+}
+
 .audio{
   display:none;
 }
